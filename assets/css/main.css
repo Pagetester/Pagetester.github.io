@@ -3388,7 +3388,7 @@ input, select, textarea {
 			}
 
 			#menu {
-				display: flex;
+				display: none;
 			}
 
 		/* Banner */
@@ -3488,7 +3488,7 @@ input, select, textarea {
 					}
 
 					#navButton .toggle:before {
-						background: rgba(25, 89, 156, 1);
+						background: rgba(209, 216, 151, 1);
 						color: #ffffff;
 						content: '\f0c9';
 						display: block;
@@ -3520,14 +3520,15 @@ input, select, textarea {
 				background-image: -ms-linear-gradient(left, rgba(0,0,0,0) 95%, rgba(0,0,0,0.1));
 				background-image: linear-gradient(left, rgba(0,0,0,0) 95%, rgba(0,0,0,0.1));
 				display: block;
-				height: 100%;
+				height: 30%;
+				font-size: 16pt;
 				left: 0;
 				overflow-y: auto;
 				position: fixed;
 				top: 0;
 				width: 275px;
 				z-index: 10002;
-				background: #c8d6ee;
+				background: #d1d897;
 				color: #c7c9c9;
 				padding: 0.25em 0.5em;
 			}
@@ -3550,7 +3551,7 @@ input, select, textarea {
 					}
 
 					#navPanel .link.depth-0 {
-						color: #19599c;
+						color: #ffffff;
 					}
 
 					#navPanel .link .indent-1 {
