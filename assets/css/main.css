@@ -3520,7 +3520,7 @@ input, select, textarea {
 				background-image: -ms-linear-gradient(left, rgba(0,0,0,0) 95%, rgba(0,0,0,0.1));
 				background-image: linear-gradient(left, rgba(0,0,0,0) 95%, rgba(0,0,0,0.1));
 				display: block;
-				height: 30%;
+				height: 47%;
 				font-size: 16pt;
 				left: 0;
 				overflow-y: auto;
