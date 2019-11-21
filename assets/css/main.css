@@ -3510,7 +3510,7 @@ input, select, textarea {
 				-moz-transform: translateX(-275px);
 				-webkit-transform: translateX(-275px);
 				-ms-transform: translateX(-275px);
-				transform: translateX(-275px);
+				transform: translateX(-90px);
 				-moz-transition: -moz-transform 0.5s ease;
 				-webkit-transition: -webkit-transform 0.5s ease;
 				-ms-transition: -ms-transform 0.5s ease;
@@ -3520,13 +3520,13 @@ input, select, textarea {
 				background-image: -ms-linear-gradient(left, rgba(0,0,0,0) 95%, rgba(0,0,0,0.1));
 				background-image: linear-gradient(left, rgba(0,0,0,0) 95%, rgba(0,0,0,0.1));
 				display: block;
-				height: 47%;
-				font-size: 16pt;
+				height: auto;
+				font-size: 14pt;
 				left: 0;
 				overflow-y: auto;
 				position: fixed;
 				top: 0;
-				width: 275px;
+				width: auto;
 				z-index: 10002;
 				background: #d1d897;
 				color: #c7c9c9;
