@@ -98,7 +98,7 @@ input, select, textarea {
 		}
 
 	body, input, select, textarea {
-		color: #a2a2a2;
+		color: #ffffff;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 16pt;
 		font-weight: 400;
@@ -142,7 +142,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #787878;
+		color: #ffffff;
 		font-weight: 400;
 		line-height: 1em;
 		margin: 0 0 1em 0;
@@ -3262,14 +3262,13 @@ input, select, textarea {
 
 			#footer {
 				background-attachment: scroll;
-				background-color: #1f1815;
-				background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+				background-color: #ffffff;
 				background-position: top left,						bottom center;
 				background-repeat: repeat,							no-repeat;
 				background-size: auto,							cover;
 				bottom: auto;
 				left: auto;
-				padding: 4em 4em 6em 4em;
+				padding: 2em 4em 1em 4em;
 				position: relative;
 				text-align: center;
 				width: 100%;
