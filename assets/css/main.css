@@ -2007,10 +2007,10 @@ input, select, textarea {
 /* Box Two */
 
 	.boxtwo {
-		border: solid 3px #19599c;
+		border: solid 3px #19599c99;
 		margin-bottom: 2em;
-		padding: 0em;
-		background-color: #19599c;
+		padding: 1.5em;
+		background-color: #19599c99;
 	}
 
 		.boxtwo > :last-child,
@@ -2693,6 +2693,8 @@ input, select, textarea {
 
 		.wrapper.style1 {
 			background: #19599c;
+			background-image:url(../../images/wasser2.jpg);
+			background-position: center;
 			color: #d7f2e5;
 		}
 
@@ -3155,11 +3157,11 @@ input, select, textarea {
 			margin-top: -6em;
 			padding-right: 6em;
 			vertical-align: middle;
-			width: 65%;
+			width: 55%;
 		}
 
 		#thera .device {
-			border: solid 40px #ffffff00;
+			border: solid 0px #ffffff00;
 			border-bottom: 0px;
 			border-radius: 20px;
 			border-bottom-left-radius: 0;
@@ -3168,7 +3170,7 @@ input, select, textarea {
 			margin-bottom: 30px;
 			position: relative;
 			vertical-align: middle;
-			width: 35%;
+			width: 45%;
 		}
 
 			#thera .device:after {
