@@ -2695,6 +2695,7 @@ input, select, textarea {
 			background: #19599c;
 			background-image:url(../../images/wasser2.jpg);
 			background-position: center;
+			background-size: 100%;
 			color: #d7f2e5;
 		}
 
