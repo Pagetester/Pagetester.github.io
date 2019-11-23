@@ -2007,7 +2007,7 @@ input, select, textarea {
 /* Box Two */
 
 	.boxtwo {
-		border: solid 3px #19599c99;
+		border: solid 0px #19599c99;
 		margin-bottom: 2em;
 		padding: 1.5em;
 		background-color: #19599c99;
@@ -2692,7 +2692,7 @@ input, select, textarea {
 	}
 
 		.wrapper.style1 {
-			background: #19599c;
+			background: #ffffff;
 			background-image:url(../../images/wasser2.jpg);
 			background-position: center;
 			background-size: cover;
