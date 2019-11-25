@@ -1,21 +1,33 @@
 /*
-	Catalyst by Pixelarity
+	Strata by Pixelarity
 	pixelarity.com | hello@pixelarity.com
 	License: pixelarity.com/license
 */
 
 (function($) {
 
-	var	$window = $(window),
-		$body = $('body');
+	var $window = $(window),
+		$body = $('body'),
+		$header = $('#header'),
+		$footer = $('#footer'),
+		$main = $('#main'),
+		settings = {
+
+			// Parallax background effect?
+				parallax: true,
+
+			// Parallax factor (lower = more intense, higher = less intense).
+				parallaxFactor: 20
+
+		};
 
 	// Breakpoints.
 		breakpoints({
-			wide:      [ '1281px',  '1680px' ],
-			normal:    [ '981px',   '1280px' ],
-			narrow:    [ '737px',   '980px'  ],
-			mobile:    [ '481px',   '736px'  ],
-			mobilep:   [ null,      '480px'  ]
+			xlarge:  [ '1281px',  '1800px' ],
+			large:   [ '981px',   '1280px' ],
+			medium:  [ '737px',   '980px'  ],
+			small:   [ '481px',   '736px'  ],
+			xsmall:  [ null,      '480px'  ],
 		});
 
 	// Play initial animations on page load.
@@ -25,10 +37,18 @@
 			}, 100);
 		});
 
-	// Dropdowns.
-		$('#nav > ul').dropotron({
-			alignment: 'right'
-		});
+	// Touch?
+		if (browser.mobile) {
+
+			// Turn on touch mode.
+				$body.addClass('is-touch');
+
+			// Height fix (mostly for iOS).
+				window.setTimeout(function() {
+					$window.scrollTop($window.scrollTop() + 1);
+				}, 0);
+
+		}
 
 	// Nav Panel.
 
@@ -58,39 +78,70 @@
 					side: 'left',
 					target: $body,
 					visibleClass: 'navPanel-visible'
+				});	
+
+	// Footer.
+		breakpoints.on('<=medium', function() {
+			$footer.insertAfter($main);
+		});
+
+		breakpoints.on('>medium', function() {
+			$footer.appendTo($header);
+		});
+
+	// Header.
+
+		// Parallax background.
+
+			// Disable parallax on IE (smooth scrolling is jerky), and on mobile platforms (= better performance).
+				if (browser.name == 'ie'
+				||	browser.mobile)
+					settings.parallax = false;
+
+			if (settings.parallax) {
+
+				breakpoints.on('<=medium', function() {
+
+					$window.off('scroll.strata_parallax');
+					$header.css('background-position', '');
+
 				});
 
-	// Banner.
-		var $banner = $('#banner');
+				breakpoints.on('>medium', function() {
 
-		if ($banner.length > 0) {
+					$header.css('background-position', 'left 0px');
 
-			// Parallax background.
-				if (browser.name != 'ie'
-				&&	browser.name != 'edge'
-				&&	!browser.mobile) {
-
-					var originalPosition = $banner.css('background-position');
-
-					breakpoints.on('<=normal', function() {
-
-						$window.off('scroll.px');
-						$banner.css('background-position', originalPosition);
-
+					$window.on('scroll.strata_parallax', function() {
+						$header.css('background-position', 'left ' + (-1 * (parseInt($window.scrollTop()) / settings.parallaxFactor)) + 'px');
 					});
 
-					breakpoints.on('>normal', function() {
+				});
 
-						$banner.css('background-position', 'center 0px');
+				$window.on('load', function() {
+					$window.triggerHandler('scroll');
+				});
 
-						$window.on('scroll.px', function() {
-							$banner.css('background-position', 'center ' + (parseInt($window.scrollTop()) * -0.5) + 'px');
-						});
+			}
 
-					});
+	// Main Sections: Two.
 
-				}
+		// Lightbox gallery.
+			$window.on('load', function() {
 
-		}
+				$('#two').poptrox({
+					caption: function($a) { return $a.next('h3').text(); },
+					overlayColor: '#2c2c2c',
+					overlayOpacity: 0.85,
+					popupCloserText: '',
+					popupLoaderText: '',
+					selector: '.work-item a.image',
+					usePopupCaption: true,
+					usePopupDefaultStyling: false,
+					usePopupEasyClose: false,
+					usePopupNav: true,
+					windowMargin: (breakpoints.active('<=small') ? 0 : 50)
+				});
+
+			});
 
 })(jQuery);
