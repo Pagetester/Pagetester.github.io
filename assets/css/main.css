@@ -403,7 +403,7 @@ input, select, textarea {
 
 		.row.gtr-50 {
 			margin-top: 0;
-			margin-left: -1.5em;
+			margin-left: 0em;
 		}
 
 			.row.gtr-50 > * {
