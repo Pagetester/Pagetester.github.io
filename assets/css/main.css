@@ -650,7 +650,7 @@ input, select, textarea {
 				}
 
 					.row.gtr-50 > * {
-						padding: 0 0 0 1.5em;
+						padding: 0 0 0 2.5em;
 					}
 
 					.row.gtr-50.gtr-uniform {
@@ -1762,8 +1762,8 @@ input, select, textarea {
 	}
 
 	.col {
-  	display: table-cell;
-  	padding: 16px;
+  	display: contents;
+  	padding: 0em 0em 0em 5em;
 	}
 
 	.colx {
