@@ -3925,6 +3925,7 @@ input, select, textarea {
 			button,
 			.button {
 				padding: 0;
+				width: 70%
 			}
 
 		/* One */
