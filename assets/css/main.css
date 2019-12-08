@@ -2038,7 +2038,7 @@ input, select, textarea {
 		margin-bottom: 2em;
 		padding: 1.5em;
 		background-color: #19599c;
-		opacity: 65%;
+		opacity: 0.65;
 	}
 
 		.boxtwo > :last-child,
@@ -4051,5 +4051,3 @@ input, select, textarea {
 				max-width: 100%;
 				width: 30em;
 			}				
-
-	}
