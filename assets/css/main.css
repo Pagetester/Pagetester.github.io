@@ -3308,19 +3308,8 @@ input, select, textarea {
 			position: relative;
 			vertical-align: bottom;
 			width: 35%;
-		}
-
-			#one .extradevice:after {
-				background: #eee0;
-				border-radius: 100%;
-				content: '';
-				height: 10px;
-				left: 50%;
-				margin: -23px 0 0 -5px;
-				position: absolute;
-				top: 0;
-				width: 10px;
-			}			
+			height: auto;
+		}		
 
 /* Therapie */
 
@@ -3517,10 +3506,7 @@ input, select, textarea {
 			#one .extradevice {
 				border-width: 11em;
 			}
-
-				#one .extradevice:after {
-					margin-top: -22px;
-				}				
+		
 
 		/* Thera */
 
@@ -3676,6 +3662,7 @@ input, select, textarea {
 				margin: -12em auto 0 auto;
 				max-width: 100%;
 				width: 29em;
+				height: auto;
 			}			
 
 		/* Thera */
@@ -3968,13 +3955,9 @@ input, select, textarea {
 				margin-top: 2em;
 				max-width: 100%;
 				width: 7em;
+				height: auto;
 			}
-
-				#one .extradevice:after {
-					height: 8px;
-					margin: -13px 0 0 -4px;
-					width: 8px;
-				}				
+			
 
 		/* Thera */
 
@@ -4088,14 +4071,10 @@ input, select, textarea {
 
 			#one .extradevice {
 				border-width: 0px;
-				width: 7em
+				width: 7em;
+				height: auto;
 			}
-
-				#one .extradevice:after {
-					height: 5px;
-					margin: -10px 0 0 -2.5px;
-					width: 5px;
-				}				
+			
 
 		/* Thera */
 
