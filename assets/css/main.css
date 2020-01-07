@@ -3658,7 +3658,7 @@ input, select, textarea {
 			}
 
 			#one .extradevice {
-				display: flex;
+				display: block;
 				margin: -12em auto 0 auto;
 				max-width: 100%;
 				width: 29em;
