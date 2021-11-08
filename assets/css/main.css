@@ -1707,21 +1707,21 @@ input, select, textarea {
 
 	.container {
 		margin: 0 auto;
-		width: 1500px;
+		width: 1200px;
 	}
 
 		.container.medium {
-			width: 1200px;
+			width: 900px;
 		}
 
 		@media screen and (max-width: 1680px) {
 
 			.container {
-				width: 1380px;
+				width: 1080px;
 			}
 
 				.container.medium {
-					width: 1110px;
+					width: 810px;
 				}
 
 		}
@@ -1729,11 +1729,11 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			.container {
-				width: 1260px;
+				width: 960px;
 			}
 
 				.container.medium {
-					width: 1020px;
+					width: 720px;
 				}
 
 		}
@@ -1778,7 +1778,7 @@ input, select, textarea {
 	.colx {
   	display: table-cell;
   	padding: 0px;
-	}
+	}		
 
 /* Section/Article */
 
@@ -2092,7 +2092,7 @@ input, select, textarea {
 		.selectbox.alt {
 			border: 0;
 			padding: 0;
-		}
+		}						
 
 /* Icon */
 
@@ -2215,7 +2215,7 @@ input, select, textarea {
 			.imageUP.fit img {
 				display: block;
 				width: 100%;
-			}
+			}			
 
 /* List */
 
@@ -2706,7 +2706,7 @@ input, select, textarea {
 
 		.featuretwo p {
 			margin-bottom: 0;
-		}
+		}		
 
 /* Image Feature */
 
@@ -2823,7 +2823,7 @@ input, select, textarea {
 		.wrapper.style2link {
 			background: #d2d1d1;
 			padding: 1.5em 10em 0em 10em;
-		}
+		}		
 
 		.wrapper.style3 {
 			background: #ffffff;
@@ -2898,7 +2898,7 @@ input, select, textarea {
 
 		.fullwrapper.style6 {
 			background: #c8d6ee;
-		}
+		}				
 
 /* Header */
 
@@ -3242,7 +3242,7 @@ input, select, textarea {
 
 	body.is-preload #persobanner:after {
 		opacity: 1.0;
-	}
+	}	
 
 /* Main */
 
@@ -3309,7 +3309,7 @@ input, select, textarea {
 			vertical-align: bottom;
 			width: 35%;
 			height: auto;
-		}
+		}		
 
 /* Therapie */
 
@@ -3356,10 +3356,10 @@ input, select, textarea {
 				top: 0;
 				width: 10px;
 		}
-
-		#thera .deviceUP {
-				display: none
-				}
+		
+		#thera .deviceUP {	
+				display: none	
+				}				
 
 /* Footer */
 
@@ -3415,8 +3415,8 @@ input, select, textarea {
 
 		/* Thera */
 
-			#thera .deviceUP {
-				display: none
+			#thera .deviceUP {	
+				display: none	
 				}
 
 		/* Wrapper */
@@ -3428,7 +3428,7 @@ input, select, textarea {
 			.wrapper.style2link {
 			background: #d2d1d1;
 			padding: 1.5em 3em 0em 3em;
-			}
+			}				
 
 
 
@@ -3481,7 +3481,7 @@ input, select, textarea {
 
 			.fullwrapper {
 				padding: 4em 0 2em 0;
-			}
+			}			
 
 		/* Banner */
 
@@ -3522,7 +3522,7 @@ input, select, textarea {
 			#one .extradevice {
 				border-width: 11em;
 			}
-
+		
 
 		/* Thera */
 
@@ -3539,9 +3539,9 @@ input, select, textarea {
 					margin-top: -22px;
 				}
 
-			#thera .deviceUP {
-				display: none
-				}
+			#thera .deviceUP {	
+				display: none	
+				}				
 
 
 /* Narrow */
@@ -3691,7 +3691,7 @@ input, select, textarea {
 				max-width: 100%;
 				width: 29em;
 				height: auto;
-			}
+			}			
 
 		/* Thera */
 
@@ -3946,7 +3946,7 @@ input, select, textarea {
 
 			.fullwrapper {
 				padding: 2.5em 1.25em 0.5em 1.25em;
-			}
+			}			
 
 		/* Banner */
 
@@ -3990,7 +3990,7 @@ input, select, textarea {
 				width: 7em;
 				height: auto;
 			}
-
+			
 
 		/* Thera */
 
@@ -4013,7 +4013,7 @@ input, select, textarea {
 				margin: -2em auto 30px auto;
 				max-width: 100%;
 				width: 30em;
-			}
+			}				
 
 	}
 
@@ -4118,7 +4118,7 @@ input, select, textarea {
 				width: 7em;
 				height: auto;
 			}
-
+			
 
 		/* Thera */
 
@@ -4137,4 +4137,4 @@ input, select, textarea {
 				margin: -2em auto 30px auto;
 				max-width: 100%;
 				width: 30em;
-			}
+			}				
