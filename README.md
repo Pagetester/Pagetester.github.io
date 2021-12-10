@@ -1,2 +1,0 @@
-# Yvonne Mieth Webseite
- 
